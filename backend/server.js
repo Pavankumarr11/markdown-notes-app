@@ -23,7 +23,7 @@ const PORT = process.env.PORT || 5000;
 
 // CORS: allow the Vite dev server (port 5173) and any production origin.
 app.use(cors({
-  origin: process.env.CLIENT_ORIGIN || 'http://localhost:5173',
+  origin: true,
   credentials: true,
 }));
 
