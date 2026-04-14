@@ -8,7 +8,7 @@ import axios from 'axios';
 
 // The Vite dev server proxies /api → http://localhost:5000, so we don't need
 // to hardcode the port.  In production, set VITE_API_BASE_URL.
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || '/api';
+const BASE_URL = "https://markdown-notes-app-807d.onrender.com/api";
 
 const api = axios.create({
   baseURL: BASE_URL,
